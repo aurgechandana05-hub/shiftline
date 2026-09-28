@@ -1,0 +1,54 @@
+﻿1
+00:00:00,000 --> 00:00:13,752
+A new shift starts. Same incident, different engineer, and no time to read two
+hundred chat messages. Shiftline turns that handoff into context the next operator
+can act on.
+
+2
+00:00:14,132 --> 00:00:31,508
+This example follows Acme Logistics, a fictional customer with duplicate webhook
+deliveries. The goal is not autonomous incident response. It is helping a human
+inherit the evidence, decisions, and constraints that shaped the last shift.
+
+3
+00:00:31,888 --> 00:00:45,771
+First, we see what changed: duplicate deliveries began just after a webhook
+replay. That timing belongs with the source, so the next person knows where this
+timeline entry came from.
+
+4
+00:00:46,151 --> 00:00:59,833
+There is also a customer constraint: their signing secret cannot be rotated before
+Friday. A generic summary may lose that detail. Here it is prominent and linked to
+the customer-call note.
+
+5
+00:01:00,213 --> 00:01:15,365
+The previous replay made duplicates worse. Shiftline marks that attempt as a
+failed approach, not advice. During a handoff, remembering what not to repeat can
+matter as much as remembering what happened.
+
+6
+00:01:15,745 --> 00:01:32,802
+The next-shift brief groups the safe next check, the failed workaround, and the
+customer constraint. Each detail has a source. The idempotency check is explicitly
+unverified; a suggestion is not a verified fix.
+
+7
+00:01:33,182 --> 00:01:49,439
+Now compare a fresh session with memory enabled. Without context, the agent admits
+it does not know the earlier constraint. With recalled context, it shows the
+failed replay and the Friday deadline, with sources.
+
+8
+00:01:49,819 --> 00:02:02,691
+An operator can ask about the incident, then record whether a step worked, failed,
+or is still unverified. That confirmed outcome can be retained so a later shift
+has better evidence.
+
+9
+00:02:03,071 --> 00:02:23,352
+This walkthrough is using Shiftline's clearly labeled local demo memory, not a
+live Hindsight connection. When configured, the app can use Hindsight retain,
+recall, and reflect for cross-session memory. Shiftline helps teams hand context
+forward, not hand over control.

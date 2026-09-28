@@ -1,0 +1,10 @@
+.venv*/
+__pycache__/
+*.py[cod]
+shiftline.db
+Shiftline_Demo_Walkthrough.mp4
+Shiftline_Demo_Walkthrough.srt
+shiftline-live.log
+shiftline-cloud-connect.log
+cloud-connect.log
+cloud-connect-error.log

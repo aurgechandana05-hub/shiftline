@@ -1,0 +1,76 @@
+1
+00:00:00,000 --> 00:00:09,648
+Every shift change risks losing one important fact: what failed,
+what the customer cannot change, and what is still unverified.
+
+2
+00:00:09,648 --> 00:00:13,507
+Shiftline is built to carry that context forward.
+
+3
+00:00:13,750 --> 00:00:22,663
+Here is a familiar on-call moment: webhook deliveries duplicate
+after a replay, the customer's signing secret cannot rotate until
+
+4
+00:00:22,663 --> 00:00:32,514
+Friday, and an earlier replay made things worse. This Acme Logistics
+incident is synthetic, but it reflects real support pressure: people
+
+5
+00:00:32,514 --> 00:00:36,736
+inherit incidents while customers and services are still waiting.
+
+6
+00:00:36,750 --> 00:00:46,271
+These four fictional handoff notes have already been explicitly
+retained in the live Hindsight bank. The incoming operator can
+
+7
+00:00:46,271 --> 00:00:54,790
+review their sources without replaying the entire conversation. Real
+teams should store only approved, appropriately redacted incident
+
+8
+00:00:54,790 --> 00:00:55,291
+context.
+
+9
+00:00:55,500 --> 00:01:04,733
+Now I ask what not to repeat. Shiftline first recalls memory from
+Hindsight, then invokes Hindsight Reflect. The answer connects the
+
+10
+00:01:04,733 --> 00:01:13,966
+failed replay with the customer constraint, so the next operator is
+not asked to rediscover it from a long chat log.
+
+11
+00:01:14,000 --> 00:01:21,950
+The answer warns against repeating the replay and keeps the
+suggested idempotency check marked unverified. That distinction
+
+12
+00:01:21,950 --> 00:01:29,432
+matters in practice: remembered facts are evidence to review, not
+permission for an AI to act.
+
+13
+00:01:29,500 --> 00:01:39,485
+Memory Replay compares a fresh session with actual Hindsight recall.
+Shiftline's purpose is focused handoff: less repeated investigation,
+
+14
+00:01:39,485 --> 00:01:45,587
+fewer forgotten constraints, and a human still making every
+operational decision.
+
+15
+00:01:45,750 --> 00:01:57,405
+The incident here is fictional, not a real customer case. In a real
+deployment, use approved and redacted records, verify each source,
+
+16
+00:01:57,405 --> 00:02:05,351
+and keep operators in control. Shiftline carries context forward; it
+does not resolve incidents autonomously.
